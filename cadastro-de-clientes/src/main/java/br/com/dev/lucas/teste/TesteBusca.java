@@ -18,6 +18,7 @@ public class TesteBusca {
 
 		em.getTransaction().begin();
 		Query query = em.createQuery("select c from Clientes c");
+		@SuppressWarnings("unchecked")
 		List<Clientes> clientes = query.getResultList();
 		em.getTransaction().commit();
 		em.close();
