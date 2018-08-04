@@ -16,6 +16,8 @@ public class TesteHibernate {
 
 		new ClienteDAO(connection).adiciona(cliente);
 
+		connection.close();
+
 	}
 
 }
