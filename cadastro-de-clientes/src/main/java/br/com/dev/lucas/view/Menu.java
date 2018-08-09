@@ -41,9 +41,11 @@ public class Menu {
 				String rua = teclado.next();
 
 				System.out.print("Digite o bairro do cliente: ");
+				teclado.nextLine();
 				String bairro = teclado.next();
 
 				System.out.print("Digite o telefone do cliente: ");
+				teclado.nextLine();
 				String telefone = teclado.next();
 
 				new ClienteDAO(new EntityFactory().getConnection()).adiciona(new Clientes(nome, idade, rua, bairro, telefone));
