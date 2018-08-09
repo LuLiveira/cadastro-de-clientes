@@ -12,4 +12,5 @@ public class EntityFactory {
 		EntityManager mananger = emf.createEntityManager();
 		return mananger;
 	}
+
 }

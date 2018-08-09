@@ -20,10 +20,11 @@ public class Clientes {
 	public Clientes() {
 	}
 
-	public Clientes(String nome, int idade, String rua, String telefone) {
+	public Clientes(String nome, int idade, String rua, String bairro, String telefone) {
 		this.nome = nome;
 		this.idade = idade;
 		this.rua = rua;
+		this.bairro = bairro;
 		this.telefone = telefone;
 	}
 
